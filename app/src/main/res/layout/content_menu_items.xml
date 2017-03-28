@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.milto.pizzaapp.MenuItems"
+    tools:showIn="@layout/activity_menu_items"
+    android:background="#6d4c41">
+
+    <ImageView
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:id="@+id/imageView3"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:background="@drawable/vegmenu" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Veg Menu"
+        android:textSize="40dp"
+        android:textColor="#E64A19"
+        android:id="@+id/textView3"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/imageView3" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="View Menu"
+        android:id="@+id/VegButton"
+        android:layout_below="@+id/textView3"
+        android:layout_alignParentEnd="true"
+        android:background="#E64A19"
+        android:onClick="vegclick" />
+
+    <ImageView
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:id="@+id/imageView4"
+        android:layout_centerVertical="true"
+        android:layout_alignParentStart="true"
+        android:background="@drawable/nonmenu" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Non Veg"
+        android:textSize="40dp"
+        android:textColor="#E64A19"
+        android:id="@+id/textView4"
+        android:layout_alignTop="@+id/imageView4"
+        android:layout_toEndOf="@+id/imageView4" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="View Menu"
+        android:id="@+id/nonvgbtn"
+        android:layout_below="@+id/textView4"
+        android:layout_alignParentEnd="true"
+        android:background="#E64A19"
+        android:onClick="nonvgclick" />
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:id="@+id/imageView5"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="62dp"
+        android:background="@drawable/drinks" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Beverages"
+        android:textSize="30dp"
+        android:textColor="#E64A19"
+        android:id="@+id/textView5"
+        android:layout_alignTop="@+id/imageView5"
+        android:layout_toEndOf="@+id/imageView4" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="View Menu"
+        android:id="@+id/drinkbtn"
+        android:layout_below="@+id/textView5"
+        android:layout_alignParentEnd="true"
+        android:background="#E64A19"
+        android:onClick="drinkClick" />
+
+</RelativeLayout>
